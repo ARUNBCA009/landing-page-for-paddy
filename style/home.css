@@ -1,0 +1,153 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker color for readability */
+}
+
+/* Header styles */
+header {
+    background-color: rgb(80,193,194);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Full width for header */
+}
+
+header h2 {
+    margin: 0;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+header h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+/* Navigation styles */
+#navdiv {
+
+    border-bottom: 2px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    max-width: 100%;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+#nav a:hover {
+    color: #0056b3;
+}
+
+/* Main layout container */
+main {
+    max-width: 1200px; /* Restrict max-width to 1200px for better content control */
+    margin: 20px auto; /* Center the content */
+    padding: 0 15px; /* Add some padding for mobile */
+}
+
+/* Sidebar styling */
+aside {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 400px; /* Set minimum height for consistency */
+    height: 100%;
+}
+
+aside h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Article section styling */
+section {
+    padding: 15px; /* Adjust padding for the section */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 400px; /* Consistent height for all sections */
+    margin-bottom: 20px; /* Space between articles */
+}
+
+section img {
+    width: 100%; /* Responsive image */
+    max-height: 250px; /* Set a maximum height for the image */
+    object-fit: cover; /* Maintain aspect ratio while cropping */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Additional article section */
+section h4 {
+    font-size: 20px;
+    margin-top: 10px; /* Reduced margin for a tighter layout */
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    main .row > [class*='col-'] {
+        margin-bottom: 20px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    aside {
+        margin-bottom: 20px;
+    }
+}
